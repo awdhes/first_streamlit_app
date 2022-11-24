@@ -1,6 +1,7 @@
 
 import streamlit
 import pandas
+import snowflake-connector-python
 streamlit.header('Breakfast Menu')
 streamlit.text('🤷‍♂️ Omega 3 & Blueberry Oatmeal')
 streamlit.text('🎂🎂🎂🎂🎂🎂Kale, Spinach & Rocket Smoothie')
@@ -25,7 +26,7 @@ streamlit.text(fruityvice_response.json())
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # Display JSON data on table view
 streamlit.dataframe(fruityvice_normalized)
-import snowflake-connector
+
 
 
 
